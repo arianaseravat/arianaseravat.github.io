@@ -1,102 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ariana | Portfólio</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 680px;
-            width: 100%;
-        }
-        .badge {
-            display: inline-block;
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 24px;
-        }
-        h1 {
-            color: #58a6ff;
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 12px;
-        }
-        .subtitle {
-            font-size: 1.25rem;
-            color: #8b949e;
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
-        p {
-            font-size: 1rem;
-            color: #8b949e;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            color: #e6edf3;
-            font-size: 1.3rem;
-            margin-top: 40px;
-            margin-bottom: 16px;
-            border-bottom: 1px solid #21262d;
-            padding-bottom: 8px;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            list-style: none;
-        }
-        .skill-tag {
-            background-color: #21262d;
-            color: #58a6ff;
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            border: 1px solid #30363d;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariana Tavares | Portfólio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; line-height: 1.6; padding: 20px; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+    .lang-btn { background: #334155; color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; }
+    .profile-section { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-bottom: 40px; }
+    .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8; }
+    h1 { font-size: 2.2rem; color: #f8fafc; }
+    .subtitle { color: #38bdf8; font-weight: 600; font-size: 1.1rem; margin-top: 5px; }
+    .bio { margin-top: 15px; color: #cbd5e1; text-align: justify; }
+    .section-title { font-size: 1.5rem; margin: 30px 0 15px; border-bottom: 1px solid #334155; padding-bottom: 8px; color: #38bdf8; }
+    .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill-tag { background: #1e293b; color: #38bdf8; padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; border: 1px solid #334155; }
+    .card { background: #1e293b; border-radius: 12px; overflow: hidden; border: 1px solid #334155; margin-top: 15px; }
+    .card-img { width: 100%; height: 240px; object-fit: cover; }
+    .card-info { padding: 20px; }
+    .card-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 8px; color: #f8fafc; }
+    .card-desc { font-size: 0.95rem; color: #cbd5e1; }
+    .badge { display: inline-block; background: #0284c7; color: white; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; margin-bottom: 10px; }
+    .social-btn { display: inline-block; margin-top: 20px; background: #0077b5; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="badge">👋 Welcome to my portfolio</div>
-        
-        <h1>Hi, I'm<br>Ariana.</h1>
-        
-        <div class="subtitle">Estudante & Criadora de Projetos</div>
-        
-        <p>
-            Bem-vindo ao meu espaço pessoal! Estou a construir este portfólio para partilhar o meu percurso, 
-            os meus projetos e as tecnologias com que gosto de trabalhar.
-        </p>
+  <div class="container">
+    <header>
+      <div></div>
+      <a href="en.html" class="lang-btn">🇺🇸 English</a>
+    </header>
 
-        <h2 class="section-title">Competências & Ferramentas</h2>
-        <ul class="skills-list">
-            <li class="skill-tag">HTML & CSS</li>
-            <li class="skill-tag">JavaScript</li>
-            <li class="skill-tag">Git & GitHub</li>
-            <li class="skill-tag">Python</li>
-        </ul>
+    <section class="profile-section">
+      <img src="IMG_0916.jpeg" alt="Ariana Tavares" class="profile-img">
+      <div>
+        <h1>Ariana Tavares</h1>
+        <p class="subtitle">Ciências Aeronáuticas e do Espaço | Operações & Segurança na Aviação ✈️</p>
+      </div>
+      <p class="bio">
+        Olá, sou a Ariana.<br><br>
+        Sou estudante do 3.º ano da Licenciatura em Ciências Aeronáuticas e do Espaço no ISEC Lisboa, interessada em operações aeronáuticas, segurança na aviação, fatores humanos e sistemas aplicados à aviação.<br><br>
+        Tenho participado em projetos que exploram Inteligência Artificial e Machine Learning na aviação, incluindo um projeto colaborativo de previsão de risco de bird strike.<br><br>
+        Atualmente, encontro-me na Letónia no <i>Riga Aeronautical Institute</i>, com foco no desenvolvimento de competências num contexto académico e aeronáutico internacional.
+      </p>
+      <a href="https://www.linkedin.com/in/teu-perfil" target="_blank" class="social-btn">🔗 Ver Perfil no LinkedIn</a>
+    </section>
 
-        <h2 class="section-title">Projetos</h2>
-        <p>Em breve irei adicionar aqui os meus principais projetos e links para os repositórios!</p>
-    </div>
+    <section>
+      <h2 class="section-title">Competências & Ferramentas</h2>
+      <div class="skills-container">
+        <span class="skill-tag">Inteligência Artificial</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Comunicação & Marketing</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Inglês</span>
+        <span class="skill-tag">Criatividade</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projetos & Experiência</h2>
+      
+      <!-- Projeto Bird Strike -->
+      <div class="card">
+        <img src="5E1C7F01-93F3-4E4B-AB6B-72BB6134E3C9.jpeg" alt="Comitiva do Projeto Bird Strike" class="card-img">
+        <div class="card-info">
+          <span class="badge">Nota Final: 18 Valores 🏆</span>
+          <div class="card-title">Previsão de Risco de Bird Strike com IA</div>
+          <p class="card-desc">Projeto colaborativo desenvolvido em equipa, focado na aplicação de Inteligência Artificial e Machine Learning para a previsão de risco de colisões entre aves e aeronaves (bird strike), visando aumentar a segurança nas operações aeronáuticas.</p>
+        </div>
+      </div>
+
+      <!-- Experiência UECL -->
+      <div class="card">
+        <img src="IMG_3985.jpeg" alt="Equipa UECL" class="card-img">
+        <div class="card-info">
+          <div class="card-title">Departamento de Comunicação & Marketing</div>
+          <p class="card-desc"><b>UECL - União dos Estudantes Cabo-Verdianos de Lisboa</b><br>Atuação na criação de conteúdos, gestão de comunicação e estratégias de divulgação para a comunidade académica e estudantil.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
